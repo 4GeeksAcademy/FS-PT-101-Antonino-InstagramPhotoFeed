@@ -22,43 +22,52 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid p-2">
+
+            <!-- Parte izquierda del Nav -->
             <a class="navbar-brand p-2" href="#"><span class="fa-brands fa-instagram fa-xl"></span> Instagram</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+            <!-- Menú hamburguesa Nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <!-- Buton modal -->
+            <!-- Parte derecha del Nav -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto mb-0 mb-lg-0 mt-2">
 
-                <button type="button" class="btn btn-success ms-auto mt-2" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Create new post
-                </button>
-
-                <!--  Menu Dropdown -->
-
-                <ul class="navbar-nav mb-2 mb-lg-0 mt-2">
-                    <li class="nav-item dropdown">
-                        <button class="nav-link dropdown-toggle mx-2 bg-light" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="fa-solid fa-gear mr-1"></span>
+                    <!-- Botón modal -->
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Create new post
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                            <li><a class="dropdown-item" href="#">Privacy and data</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                        </ul>
+                    </li>
+
+                    <!-- Menú Dropdown -->
+                    <li class="navbar-drop">
+                        <div class="dropdown">
+                            <button class="nav-link dropdown-toggle mx-2" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                <span class="fa-solid fa-gear"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-lg-end position-absolute"
+                                aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- Navs and tabs -->
 
